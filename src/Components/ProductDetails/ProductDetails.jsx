@@ -5,19 +5,20 @@ import starDullIcon from "../Assets/star_dull_icon.png";
 export default function ProductDetails({ product }) {
   return (
     <div className="productdisplay">
-      <div className="productdisplay-left"></div>
-      <div className="productdisplay-img-list">
-        <img src={product.image} alt="product image" />
-        <img src={product.image} alt="product image" />
-        <img src={product.image} alt="product image" />
-        <img src={product.image} alt="product image" />
-      </div>
-      <div className="productdisplay-img">
-        <img
-          className="productdisplay-main-img"
-          src={product.image}
-          alt="product image"
-        />
+      <div className="productdisplay-left">
+        <div className="productdisplay-img-list">
+          <img src={product.image} alt="product image" />
+          <img src={product.image} alt="product image" />
+          <img src={product.image} alt="product image" />
+          <img src={product.image} alt="product image" />
+        </div>
+        <div className="productdisplay-img">
+          <img
+            className="productdisplay-main-img"
+            src={product.image}
+            alt="product image"
+          />
+        </div>
       </div>
       <div className="productdisplay-right">
         <h1>{product.name}</h1>
@@ -37,6 +38,25 @@ export default function ProductDetails({ product }) {
             ${product.new_price}
           </div>
         </div>
+        <div className="productdisplay-right-description">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio.
+        </div>
+        <div className="productdisplay-right-size">
+          <h2>Select Size</h2>
+          <div className="productdisplay-right-sizes">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
+          </div>
+        </div>
+        <button>ADD TO CART</button>
       </div>
     </div>
   );
