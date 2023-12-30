@@ -1,0 +1,14 @@
+.shop-category-discription {
+  display: flex;
+  margin: 35px 0px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.shopcategory-products {
+  margin: 20px 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+}

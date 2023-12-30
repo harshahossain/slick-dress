@@ -1,5 +1,5 @@
 import "./Footer.css";
-import footerLogo from "../Assets/logo_big.png";
+import footerLogo from "../Assets/main-icon.png";
 import instagramIcon from "../Assets/instagram_icon.png";
 import pintesterIcon from "../Assets/pintester_icon.png";
 import whatsappIcon from "../Assets/whatsapp_icon.png";
