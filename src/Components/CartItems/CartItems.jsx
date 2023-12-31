@@ -17,6 +17,7 @@ export default function CartItems() {
         <p>Remove</p>
       </div>
       <hr />
+      // eslint-disable-next-line
       {all_product.map((item) => {
         if (cartItems[item.id] > 0) {
           return (

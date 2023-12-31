@@ -10,16 +10,16 @@ export default function ProductDetails({ product }) {
     <div className="productdisplay">
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
-          <img src={product.image} alt="product image" />
-          <img src={product.image} alt="product image" />
-          <img src={product.image} alt="product image" />
-          <img src={product.image} alt="product image" />
+          <img src={product.image} alt="product" />
+          <img src={product.image} alt="product" />
+          <img src={product.image} alt="product" />
+          <img src={product.image} alt="product" />
         </div>
         <div className="productdisplay-img">
           <img
             className="productdisplay-main-img"
             src={product.image}
-            alt="product image"
+            alt="product"
           />
         </div>
       </div>
