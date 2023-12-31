@@ -4,8 +4,13 @@ import { ShopContext } from "../../Context/ShopContext";
 import removeIcon from "../Assets/cart_cross_icon.png";
 
 export default function CartItems() {
-  const { all_product, cartItems, removeFromCart, addToCart } =
-    useContext(ShopContext);
+  const {
+    all_product,
+    cartItems,
+    removeFromCart,
+    addToCart,
+    getTotalCartAmount,
+  } = useContext(ShopContext);
   return (
     <div className="cartitems">
       <div className="cartitems-main">
@@ -17,7 +22,7 @@ export default function CartItems() {
         <p>Remove</p>
       </div>
       <hr />
-      // eslint-disable-next-line
+
       {all_product.map((item) => {
         if (cartItems[item.id] > 0) {
           return (
@@ -59,16 +64,17 @@ export default function CartItems() {
           <div>
             <div className="cartitems-total-item">
               <p>Subtotal</p>
-              <p>${0}</p>
+              <p>${getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="cartitems-total-item">
-              <p>Shipping Fee</p>Free<p></p>
+              <p>Shipping Fee</p>
+              <p>Free</p>
             </div>
             <hr />
             <div className="cartitems-total-item">
               <h3>Total</h3>
-              <h3>${0}</h3>
+              <h3>${getTotalCartAmount()}</h3>
             </div>
           </div>
           <button>PROCEEED TO CHECKOUT</button>
