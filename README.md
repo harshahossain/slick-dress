@@ -1,4 +1,4 @@
-#E-Commerce website for dresses, created with MERN
+#E-Commerce website for dresses, created with Reactjs
 
 # Getting Started with Create React App
 
