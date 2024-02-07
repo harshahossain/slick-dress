@@ -27,7 +27,16 @@
   transition: 0.6s;
 }
 
-.item img {
+/* .item img {
   width: 350px;
   height: 418px;
+} */
+.item-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-img img {
+  max-width: 90%;
+  height: 90%;
+  margin: 10px;
 }

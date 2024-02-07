@@ -4,7 +4,7 @@ import "./Item.css";
 export default function Item(props) {
   return (
     <div className="item">
-      <Link to={`/product/${props.id}`}>
+      <Link to={`/product/${props.id}`} className="item-img">
         {" "}
         <img
           onClick={window.scrollTo(0, 0)}
